@@ -3,7 +3,7 @@ Script to turn on all lights with HA
 
 HA entiys must be defined into "lights.json" file
 
-EXAMPLE:
+lights.json example:
 
 ```
 {"hlights":[
@@ -12,7 +12,7 @@ EXAMPLE:
 ]}
 
 ```
-The script print the output of POSTS request
+The script print the output of POSTS request.
 
 REF:
 https://developers.home-assistant.io/docs/api/rest/
