@@ -16,3 +16,14 @@ The script print the output of POSTS request.
 
 REF:
 https://developers.home-assistant.io/docs/api/rest/
+
+Script must accept the light state as argument.
+
+Example:
+
+```
+halightmngr.py on
+
+<Response [200]>
+<Response [200]>
+```
