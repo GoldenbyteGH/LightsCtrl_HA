@@ -1,4 +1,10 @@
+"""
+Script to turn on all lights specified into 'lights.json' file
+
+"""
+
 import configparser,json,requests
+
 
 if __name__ == '__main__':
 
@@ -18,7 +24,7 @@ if __name__ == '__main__':
             "Access - Control - Allow - Origin": "*"
             }
         data = {"entity_id":lights_inv["hlights"][i]["entity_id"]}
-        url = "http://homeassistant.goldenbyte.it:8123/api/services/switch/turn_on"
+        url = "http://homeassistant.goldenbyte.it:8123/api/services/light/turn_on"
         data=json.dumps(data)
         responce = requests.post(url,data=data,headers=headers)
         print(responce)
