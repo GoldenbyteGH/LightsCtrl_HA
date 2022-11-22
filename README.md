@@ -27,3 +27,23 @@ halightmngr.py on
 <Response [200]>
 <Response [200]>
 ```
+
+#######UPDATE#######
+
+Control HA lights from ESP32 and KY-038 module
+
+define a new file called boot.py to push into ESP32.
+
+ESP32 Commands:
+```
+ampy -p /dev/ttyACM0 put /home/giova/PycharmProjects/esp32/boot.py
+ampy -p /dev/ttyACM0 get [boot.py]
+ampy -p /dev/ttyACM0 ls
+ampy -p /dev/ttyACM0 rm [boot.py]
+```
+
+Connect into micropython console
+
+```
+sudo screen [/dev/ttyACM0] 115200
+```
