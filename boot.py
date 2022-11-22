@@ -61,7 +61,7 @@ while True:
         print("pot1 = {}  -----  pot2 = {}".format(pot_value,pot2_value))
         print('rilevato')
         change_light_state("light.bedroom")
-        sleep(5)    # not listen 4 5 second by last trigger
+        sleep(5)    # not listen for 5 second by last trigger
 
 
 
